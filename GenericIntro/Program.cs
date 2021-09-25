@@ -11,11 +11,16 @@ namespace GenericsIntro
             MyList<string> isimler = new MyList<string>();
             isimler.Add("Engin");
 
-            List<string> liste = new List<string>();
-            Console.WriteLine(liste.Count);
+            Console.WriteLine(isimler.Length);
 
+            isimler.Add("Engin");
 
-            
+            Console.WriteLine(isimler.Length);
+
+            foreach (var isim in isimler.Items)
+            {
+                Console.WriteLine(isim);
+            }
         }
     }
 }
